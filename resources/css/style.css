@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
     color: #555;
     font-family: "Lato", "Ariel", sans-serif;
     font-weight: 300;
@@ -86,7 +86,7 @@ h1 {
 /* --------------------------------- */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/SamiMakhuliPicture.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/SamiMakhuliPicture.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -111,11 +111,12 @@ header {
     float: right;
     list-style: none;
     margin-top: 55px;
+/*    margin-left: 10%;*/
 }
 
 .main-nav li {
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .main-nav li a:link,
@@ -132,5 +133,9 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #2ecc71;
+}
+
+.main-nav li:last-child {
+    margin-right: 20px;
 }
 

@@ -1,0 +1,49 @@
+/* Big tablet to 1200 px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+/* Small tablet to big tabler (iPad in portrait mode) - 768 px to 1023 px */
+@media only screen and (max-width: 1023px) {
+
+    h1 { font-size: 150%; }
+
+    .main-nav {
+        margin-top: 30px;
+    }
+
+    .main-nav li {
+        margin-left: 10px;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        padding: 4px 0;
+        font-size: 75%;
+    }
+
+}
+
+/* All Phones/tablets that are smaller than the iPad - 481 to 767 px */
+@media only screen and (max-width: 767px) {
+    .main-nav { display: none; }
+
+    h1 { font-size: 135%; }
+    
+    .btn:link,
+    .btn:visited {
+        font-size: 80%;
+    }
+
+}
+
+/* Rules inside the declaration block will apply when the width of the device or browser is <= 480 px */
+/* Small Phones from 0 to 480 px */
+@media only screen and (max-width: 480px) {
+    
+    h1 { font-size: 120%; }
+    
+}
