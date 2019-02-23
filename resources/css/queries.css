@@ -10,6 +10,7 @@
 @media only screen and (max-width: 1023px) {
 
     h1 { font-size: 150%; }
+    h2 { font-size: 135%; }
 
     .main-nav {
         margin-top: 30px;
@@ -32,12 +33,36 @@
     .main-nav { display: none; }
 
     h1 { font-size: 135%; }
+    h2 { font-size: 120%; }
     
     .btn:link,
     .btn:visited {
         font-size: 80%;
     }
 
+    .employment-info ul li {
+        font-size: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .section-about-website ul li {
+        font-size: 80%;
+    }
+    
+    p {
+        font-size: 80%;
+        width: 90%;
+        word-spacing: 2px;
+        margin: 3% 5%;
+    }
+
+    .section-work-history .btn,
+    .section-work-history .btn-full {
+        margin-top: 10px;
+        margin-left: 5%;
+        font-size: 75%;
+    }
 }
 
 /* Rules inside the declaration block will apply when the width of the device or browser is <= 480 px */
@@ -45,10 +70,18 @@
 @media only screen and (max-width: 480px) {
     
     h1 { font-size: 120%; }
+    h2 { font-size: 100%; }
     
     .btn:link,
     .btn:visited {
         font-size: 75%;
     }
+    
+    .employment-info ul li {
+        font-size: 85%;
+    }
 
+    .employment-description p {
+        font-size: 80%;
+    }
 }

@@ -17,6 +17,10 @@ html, body {
     text-rendering: optimizeLegibility;
 }
 
+*:focus {
+    outline: none;
+}
+
 /* --------------------------------- */
 /* REUSABLE COMPONENTS */
 /* --------------------------------- */
@@ -34,7 +38,7 @@ p {
 }
 
 section {
-    margin: 10px 10px;
+    margin: 0;
 }
 
 /* ------------- HEADINGS ------------ */
@@ -57,14 +61,15 @@ h1 {
 h2 {
     color: #5a5959;
     margin: 20px 0;
-    font-size: 150%;
+    font-size: 125%;
     font-weight: 200;
     text-align: center;
-    border-bottom: 
+/*    border-bottom: 1px solid #2ecc71;*/
 }
 
 /* ------------- BUTTONS ------------ */
 
+.btn,
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -76,6 +81,7 @@ h2 {
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
+.btn-full,
 .btn-full:link,
 .btn-full:visited {
     background-color: #2ecc71;
@@ -104,6 +110,18 @@ h2 {
 .btn-ghost:active {
     border: 1px solid #27ae60;
     color: #fff;
+}
+
+/* ------------- SECTIONS ------------ */
+
+.section-education, 
+.section-references, 
+.section-awards,
+.section-hobbies, 
+.section-about-website {
+    margin: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 /* --------------------------------- */
@@ -173,6 +191,14 @@ header {
 }
 
 /* --------------------------------- */
+/* OVERVIEW */
+/* --------------------------------- */
+
+.section-overview p:last-child {
+    margin-bottom: 40px;
+}
+
+/* --------------------------------- */
 /* TOOLS */
 /* --------------------------------- */
 
@@ -201,4 +227,185 @@ header {
 
 .tools-list li:first-child {
     margin-top: 30px;
+}
+
+/* --------------------------------- */
+/* WORK HISTORY */
+/* --------------------------------- */
+
+.section-work-history {
+    color: #fff;
+    background-color: #e5e5e5;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+.dark,
+.light {
+    padding-bottom: 20px;
+}
+
+.dark {
+    background-color: #c9c6c6;
+}
+
+.light {
+    background-color: #e8e3e3;
+}
+
+.section-work-history h2 {
+    background-color:  #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.employment-info ul li {
+    color: #000;
+    display: block;
+    font-size: 95%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5px;
+}
+
+.employment-info i {
+    color: #2ecc71;
+    display: inline-block;
+    font-size: 95%;
+    padding-right: 10px;
+}
+
+.employment-info ul li:first-child {
+    padding-top: 20px;
+}
+
+.employment-info ul li:last-child {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.employment-description p {
+    color: #000;
+    font-size: 85%;
+}
+
+.section-work-history .btn,
+.section-work-history .btn-full {
+    margin-top: 1%;
+    padding: 5px 10px;
+    font-size: 80%;
+}
+
+.all-details {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1%;
+    background-color: #fff;
+    background-color: cover;
+}
+
+/* --------------------------------- */
+/* EDUCATION */
+/* --------------------------------- */
+
+.section-education {
+    background-color: #e3eaea;
+}
+
+.section-education h2 {
+    margin: 0;
+}
+
+/* --------------------------------- */
+/* REFERENCES */
+/* --------------------------------- */
+
+.section-references {
+    background-color: #fff;
+}
+
+.section-references h2 {
+    margin: 0;
+}
+
+/* --------------------------------- */
+/* AWARDS */
+/* --------------------------------- */
+
+.section-awards {
+    background-color: #e3eaea;
+}
+
+.section-awards h2 {
+    margin: 0;
+}
+
+/* --------------------------------- */
+/* HOBBIES */
+/* --------------------------------- */
+
+.section-hobbies {
+    background-color: #fff;
+}
+
+.section-hobbies h2 {
+    margin: 0;
+}
+
+/* --------------------------------- */
+/* ABOUT THIS WEBSITE */
+/* --------------------------------- */
+
+.section-about-website {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/about-website3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/about-website3.jpg);
+    background-size: cover;
+    background-position: center;
+/*    height: 100vh;*/
+    background-attachment: fixed;
+}
+
+.section-about-website {
+    background-color: #e3eaea;
+}
+
+.section-about-website h2 {
+    color: #a2a1a1;
+    margin: 0;
+}
+
+.section-about-website ul li {
+    padding-top: 5px;
+    color: #a2a1a1;
+}
+
+.section-about-website ul li:before {
+    padding-left: 15%;
+    content: "• ";
+}
+
+.section-about-website p {
+    color: #a2a1a1;
+}
+
+.section-about-website a {
+    color: #63a3a3;
+}
+
+/* --------------------------------- */
+/* FOOTER */
+/* --------------------------------- */
+
+footer {
+    background-color: #000;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    font-size: 70%;
 }
