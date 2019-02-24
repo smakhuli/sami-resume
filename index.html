@@ -21,6 +21,7 @@
             <nav>
                 <div class="row">
                     <img src="resources/img/icon-perspective.png" alt="Makhuli Logo" class="logo">
+                    <img src="resources/img/icon-perspective.png" alt="Makhuli Logo" class="logo-black">
 
                     <ul class="main-nav">
                         <li><a href="#overview">Overview</a></li>
@@ -37,7 +38,7 @@
             <div class="hero-text-box">
                 <h1>Sami Makhuli<br>Ruby on Rails Developer</h1>
 
-                <a class="btn btn-full" href="#about-website">About This Website</a>
+                <a class="btn btn-full js--scroll-to-about-website" href="#about-website">About This Website</a>
                 <a class="btn btn-ghost" href="#">Intro Video</a>
 
             </div>
@@ -47,9 +48,10 @@
         <!--------------------------- OVERVIEW SECTION -------------------------->
         <!----------------------------------------------------------------------->
 
-        <section class="section-overview">
-            <a name="overview"></a>
+        <section class="section-overview js--section-overview">
             
+            <a class="anchor" id="overview"></a>
+
             <h2>Overview</h2>
 
             <p>
@@ -67,7 +69,8 @@
         <!----------------------------------------------------------------------->
 
         <section class="section-tools">
-            <a name="tools"></a>
+
+            <a class="anchor" id="tools"></a>
 
             <h2>My Toolbox</h2>
 
@@ -95,7 +98,7 @@
         <!----------------------------------------------------------------------->
 
         <section class="section-work-history">
-            <a name="workhistory"></a>
+            <a class="anchor" id="workhistory"></a>
 
             <h2>My Employment History</h2>
 
@@ -306,7 +309,7 @@
         <!----------------------------------------------------------------------->
 
         <section class="section-education">
-            <a name="education"></a>
+            <a class="anchor" id="education"></a>
 
             <h2>Education</h2>
 
@@ -317,7 +320,7 @@
         <!----------------------------------------------------------------------->
 
         <section class="section-references">
-            <a name="references"></a>
+            <a class="anchor" id="references"></a>
 
             <h2>References</h2>
 
@@ -328,7 +331,7 @@
         <!----------------------------------------------------------------------->
 
         <section class="section-awards">
-            <a name="awards"></a>
+            <a class="anchor" id="awards"></a>
 
             <h2>Awards</h2>
 
@@ -339,7 +342,7 @@
         <!----------------------------------------------------------------------->
 
         <section class="section-hobbies">
-            <a name="hobbies"></a>
+            <a class="anchor" id="hobbies"></a>
 
             <h2>Hobbies</h2>
 
@@ -350,23 +353,21 @@
         <!----------------------------------------------------------------------->
 
         <section class="section-about-website">
-            <a name="about-website"></a>
+            <a class="anchor" id="about-website"></a>
 
             <h2>About This Website</h2>
-            
+
             <p>
-                I designed and built this responsive website from scratch using HTML5, CSS3 and Javascript. I had originally planned to build this website using WordPress, but decided to develop it from scratch to showcase my knowledge of HTML, CSS and Javascript. It uses media queries to make the website responsive for the following category of device/browser sizes:
+                I designed and built this responsive website from scratch using HTML5, CSS3, Javascript and JQuery. I had originally planned to build this website using WordPress, but decided to develop it from scratch to showcase my knowledge of HTML, CSS and Javascript/JQuery. It uses media queries to make the website responsive for the following category of device/browser sizes:
             </p>
-            
+
             <ul>
                 <li>0 to 480 pixels</li>
                 <li>481 to 767 pixels</li>
                 <li>768 to 1023 pixels</li>
                 <li>1124 to 1200 pixels</li>
             </ul>
-                
-            </p>
-            
+
             <p>
                 All code for this website is avaialable for review on GitHub in a public repository. You can access the repository by clicking <a href="https://github.com/smakhuli/sami-resume" target="_blank">here</a>.
             </p>
@@ -378,7 +379,6 @@
             <p>
                 I tested this website on Chrome, Firefox and Safari.
             </p>
-
 
         </section>
 
@@ -392,7 +392,11 @@
             <p>&nbsp;</p>
         </footer>
 
-        <script  src="resources/js/resume.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/jquery.js"></script>
+        <script src="resources/js/resume.js"></script>
+
     </body>
     
 </html>
