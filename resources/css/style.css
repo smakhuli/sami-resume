@@ -48,6 +48,10 @@ section {
     visibility: hidden;
 }
 
+.anchor.overview {
+    top: -60px;
+}
+
 /* ------------- HEADINGS ------------ */
 
 h1,
