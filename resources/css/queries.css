@@ -30,7 +30,47 @@
 
 /* All Phones/tablets that are smaller than the iPad - 481 to 767 px */
 @media only screen and (max-width: 767px) {
+
     .main-nav { display: none; }
+
+    .mobile-nav-icon { 
+        display: inline-block;
+        margin-top: 5px; 
+        margin-right: 5px;
+        font-size: 80%;
+    }
+    
+    .main-nav {
+        float: left;
+        margin-top: 5px;
+        margin-left: 40%;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 2px 0;
+        font-size: 80%;
+    }
+
+    .sticky .main-nav { margin-top: 10px; }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 3px 0; }
+    .sticky .mobile-nav-icon i { color: #555; }
+    .sticky .mobile-nav-icon { 
+        margin-top: 5px; 
+        margin-right: 5px;
+    }
+    
+    .anchor {
+        top: -180px;
+    }
 
     h1 { font-size: 135%; }
     h2 { font-size: 120%; }
@@ -69,6 +109,8 @@
 /* Small Phones from 0 to 480 px */
 @media only screen and (max-width: 480px) {
     
+    .main-nav { margin-left: 30%; }
+
     h1 { font-size: 120%; }
     h2 { font-size: 100%; }
     
