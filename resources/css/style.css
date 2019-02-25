@@ -55,7 +55,8 @@ section {
 /* ------------- HEADINGS ------------ */
 
 h1,
-h2 {
+h2,
+h3 {
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -75,7 +76,14 @@ h2 {
     font-size: 125%;
     font-weight: 200;
     text-align: center;
-/*    border-bottom: 1px solid #2ecc71;*/
+}
+
+h3 {
+    color: #5a5959;
+    margin: 20px 20px;
+    font-size: 115%;
+    font-weight: 200;
+    text-align: center;
 }
 
 /* ------------- BUTTONS ------------ */
@@ -295,7 +303,7 @@ header {
 
 .section-work-history {
     color: #fff;
-    background-color: #e5e5e5;
+    background-color: #fff;
     width: 80%;
     margin-left: 10%;
     margin-bottom: 20px;
@@ -304,14 +312,17 @@ header {
 .dark,
 .light {
     padding-bottom: 20px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    border: 0;
 }
 
 .dark {
-    background-color: #c9c6c6;
+    background-color: #a09e9e;
 }
 
 .light {
-    background-color: #e8e3e3;
+    background-color: #ccc4c4;
 }
 
 .section-work-history h2 {
@@ -331,7 +342,7 @@ header {
 }
 
 .employment-info i {
-    color: #2ecc71;
+    color: #0f8340;
     display: inline-block;
     font-size: 95%;
     padding-right: 10px;
@@ -378,6 +389,42 @@ header {
     margin: 0;
 }
 
+.class-section {
+    display: block;
+    width: 60%;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    text-align: center;
+    border: 1px solid #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: #c7d8d6;
+}
+
+.class-section ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.class-section ul li a {
+    text-decoration: none;
+}
+
+.rating {
+    font-size: 80%;
+}
+
+.graduation {
+    font-size: 90%;
+}
+
+.class-section .btn {
+    font-size: 80%;
+    padding: 5px 10px;
+    background-color: #8eccd8;
+}
+
 /* --------------------------------- */
 /* REFERENCES */
 /* --------------------------------- */
@@ -407,11 +454,35 @@ header {
 /* --------------------------------- */
 
 .section-hobbies {
-    background-color: #fff;
+/*    background-color: #fff;*/
+    background: linear-gradient(to bottom right, #67b26f, #4ca2cd);
+    padding-bottom: 30px;
 }
 
 .section-hobbies h2 {
     margin: 0;
+}
+
+.section-hobbies h2 {
+    color: #000;
+    padding-top: 20px;
+}
+
+.hobby-list ul {
+    color: 000;
+    text-align: center;
+}
+
+.hobby-list ul li {
+    margin: 1% 0;
+}
+
+.hobby-list li:first-child {
+    margin-top: 30px;
+}
+
+.hobby-list i {
+    margin-right: 10px;
 }
 
 /* --------------------------------- */
@@ -419,8 +490,8 @@ header {
 /* --------------------------------- */
 
 .section-about-website {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/about-website3.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/about-website3.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/about-website.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/about-website.jpg);
     background-size: cover;
     background-position: center;
 /*    height: 100vh;*/
