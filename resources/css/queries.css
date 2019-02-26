@@ -43,6 +43,11 @@
     .reference p {
         font-size 80%;
     }
+    
+    .description {
+        font-size: 80%;
+    }
+
 }
 
 /* All Phones/tablets that are smaller than the iPad - 481 to 767 px */
