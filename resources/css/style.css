@@ -409,6 +409,7 @@ header {
 
 .class-section ul li a {
     text-decoration: none;
+    color: #000;
 }
 
 .rating {
@@ -422,7 +423,8 @@ header {
 .class-section .btn {
     font-size: 80%;
     padding: 5px 10px;
-    background-color: #8eccd8;
+    background-color: #b5a78d;
+    border-color: #000;
 }
 
 /* --------------------------------- */
@@ -431,10 +433,51 @@ header {
 
 .section-references {
     background-color: #fff;
+    margin-bottom: 10px;
 }
 
 .section-references h2 {
     margin: 0;
+}
+
+.reference {
+    display: inline-block;
+    margin-top: 20px;
+    width: 25%;
+    margin-left: 6%;
+    border: 1px solid #000;
+}
+
+.reference ul li {
+    list-style: none;
+}
+
+.description {
+    display: block;
+    width: 90%;
+    margin: 0;
+    word-spacing: 1px;
+    font-size: 85%;
+    height: auto;
+    margin-left: 5%;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.reference-list h3 {
+    padding-top: 10px;
+    font-size: 90%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.email,
+.phone {
+    font-size: 80%;
+    text-align: center;
+}
+
+.phone {
+    padding-bottom: 10px;
 }
 
 /* --------------------------------- */
@@ -447,6 +490,20 @@ header {
 
 .section-awards h2 {
     margin: 0;
+    margin-bottom: 30px;
+}
+
+.section-awards ul li {
+    display: block;
+    width: 42%;
+    margin-left: 29%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #000;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    background-color: #7dc49b;
+    font-weight: 700;
 }
 
 /* --------------------------------- */
@@ -455,6 +512,7 @@ header {
 
 .section-hobbies {
 /*    background-color: #fff;*/
+    background: -webkit-gradient(linear, left top, right bottom, from(#67b26f), to(#4ca2cd));
     background: linear-gradient(to bottom right, #67b26f, #4ca2cd);
     padding-bottom: 30px;
 }
@@ -490,8 +548,9 @@ header {
 /* --------------------------------- */
 
 .section-about-website {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/about-website.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(img/about-website.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/about-website.jpg);
+
     background-size: cover;
     background-position: center;
 /*    height: 100vh;*/

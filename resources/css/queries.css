@@ -25,7 +25,24 @@
         padding: 4px 0;
         font-size: 75%;
     }
+    
+    .reference {
+        width: 30%;
+        margin-left: 2%;
+    }
+    
+    .reference h3 {
+        font-size: 100%;
+    }
+    
+    .email,
+    .phone {
+        font-size: 80%;
+    }
 
+    .reference p {
+        font-size 80%;
+    }
 }
 
 /* All Phones/tablets that are smaller than the iPad - 481 to 767 px */
@@ -102,6 +119,23 @@
         margin-top: 10px;
         margin-left: 5%;
         font-size: 75%;
+    }
+    
+    .section-awards h2 {
+        padding-top: 20px;
+    }
+
+    .section-awards ul li {
+        width: 80%;
+        margin-left: 10%;
+        font-size: 75%;
+        padding: 10px;
+    }
+    
+    .reference {
+        display: block;
+        width: 80%;
+        margin-left: 10%;
     }
 }
 
