@@ -490,7 +490,7 @@ header {
 
 .section-awards h2 {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .section-awards ul li {
@@ -504,6 +504,16 @@ header {
     border-radius: 25px;
     background-color: #7dc49b;
     font-weight: 700;
+}
+
+.trophy i {
+    color: #0f8340;
+    display: block;
+    width: 10%;
+    margin-left: 45%;
+    font-size: 250%;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 /* --------------------------------- */
