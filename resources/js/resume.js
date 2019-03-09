@@ -1,3 +1,5 @@
+// ======================= Hide/Show Work History Section
+
 document.querySelector(".alldetails").addEventListener("click", event => toggleAllSections(event));
 
 document.querySelector(".details1").addEventListener("click", event => toggleSection(event, "job1"));
@@ -28,6 +30,7 @@ const toggleSection = (event, thisID) => {
 const updateButton = (event, text, color)  => {
     event.target.textContent = text;
     event.target.style.backgroundColor = color;
+    event.target.style.border = `1px solid ${color}`;
 }
 
 const toggleAllSections = (event) => {
@@ -51,7 +54,7 @@ const sectionsShowOrHide = (action, valuesArray) => {
 
     const displayStyle = valuesArray[0];
     const buttonText = valuesArray[1];
-    const backgroundColor = valuesArray[2];
+    const buttonColor = valuesArray[2];
     
     jobIDs.forEach(job => { 
         const togggleElement = document.getElementById(job);
@@ -66,7 +69,40 @@ const sectionsShowOrHide = (action, valuesArray) => {
         
         if (togggleButton) {
             togggleButton.textContent = buttonText;
-            togggleButton.style.backgroundColor = backgroundColor;
+            togggleButton.style.backgroundColor = buttonColor;
+            togggleButton.style.border = `1px solid ${buttonColor}`;
         }
     });
 }
+
+// ==================== Generate Online Class section
+const onlineClassSection = (classInfo) => (
+    `<ul class="class-list">
+        <li>${classInfo.className}</li>
+        <li class="rating">${classInfo.className}</li>
+        <li class="btn btn-full"><a href="${classInfo.classUrl}" target="_blank">Course on Udemy</a></li>
+        <li class="btn btn-full"><a href="${classInfo.certificateUrl}" target="_blank" >Certificate of Completion</a></li>
+    </ul>`
+);
+
+// ====================== Generate Javascript online class section
+javascriptHTML = onlineClassSection({
+    className: 'The Complete JavaScript Course 2019: Build Real Projects!',
+    classRating: 'Rated 4.5 / 5 (37,202 ratings) - 174,280 students enrolled',
+    classUrl: 'https://www.udemy.com/the-complete-javascript-course/',
+    certificateUrl: 'https://udemy-certificate.s3.amazonaws.com/image/UC-JGGAY8W7.jpg'
+});
+
+document.querySelector('.javascript').innerHTML = javascriptHTML;
+
+// ====================== Generate HTML5/CSS3 online class section
+html5css3HTML = onlineClassSection({
+    className: 'Build Responsive Real World Websites with HTML5 and CSS3',
+    classRating: 'Rated 4.6 / 5 (22,270 ratings) - 113,611 students enrolled',
+    classUrl: 'https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/',
+    certificateUrl: 'https://udemy-certificate.s3.amazonaws.com/image/UC-TV17U0M4.jpg'
+});
+
+document.querySelector('.html5css3').innerHTML = html5css3HTML;
+
+
