@@ -1,4 +1,4 @@
-// ======================= Hide/Show Work History Section
+// ======================= Hide/Show Work History Sections
 
 document.querySelector(".alldetails").addEventListener("click", event => toggleAllSections(event));
 
