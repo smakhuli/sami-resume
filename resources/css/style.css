@@ -367,6 +367,7 @@ header {
     margin-top: 1%;
     padding: 5px 10px;
     font-size: 80%;
+    cursor: pointer;
 }
 
 .all-details {
@@ -474,6 +475,10 @@ header {
 .phone {
     font-size: 80%;
     text-align: center;
+}
+
+.email {
+    padding-bottom: 5px;
 }
 
 .phone {
