@@ -56,7 +56,8 @@ section {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -78,12 +79,20 @@ h2 {
     text-align: center;
 }
 
-h3 {
+h3,
+h4 {
     color: #5a5959;
     margin: 20px 20px;
-    font-size: 115%;
     font-weight: 200;
     text-align: center;
+}
+
+h3 {
+    font-size: 115%;
+}
+
+h4 {
+    font-size: 105%;
 }
 
 /* ------------- BUTTONS ------------ */
@@ -442,39 +451,63 @@ header {
 }
 
 .reference {
-    display: inline-block;
+    display: block;
     margin-top: 20px;
-    width: 25%;
-    margin-left: 6%;
+    width: 80%;
+    margin-left: 10%;
     border: 1px solid #000;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 6px 10px grey;
+    box-shadow: 3px 6px 10px grey;
 }
 
 .reference ul li {
     list-style: none;
 }
 
-.description {
+.description,
+.recommedation {
     display: block;
     width: 90%;
-    margin: 0;
+    margin: 5px 0 10px 5%;
     word-spacing: 1px;
     font-size: 85%;
     height: auto;
-    margin-left: 5%;
     text-align: justify;
-    margin-bottom: 10px;
 }
 
-.reference-list h3 {
+.description {
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+}
+
+.recommedation {
+    padding-bottom: 20px;
+}
+
+.reference-list h3,
+.reference-list h4 {
     padding-top: 10px;
-    font-size: 90%;
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.reference-list h3 {
+    font-size: 90%;
+}
+
+.reference-list h4 {
+    color: forestgreen;
+    font-size: 80%;
+    padding-bottom: 5px;
+    text-transform: none;
+}
+
 .email,
 .phone {
     font-size: 80%;
     text-align: center;
+    text-decoration: none;
 }
 
 .email {

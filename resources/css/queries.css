@@ -26,11 +26,6 @@
         font-size: 75%;
     }
     
-    .reference {
-        width: 30%;
-        margin-left: 2%;
-    }
-    
     .reference h3 {
         font-size: 100%;
     }
@@ -40,11 +35,8 @@
         font-size: 80%;
     }
 
-    .reference p {
-        font-size 80%;
-    }
-    
-    .description {
+    .description,
+    .recommedation {
         font-size: 80%;
     }
 
