@@ -11,6 +11,8 @@
 
     h1 { font-size: 150%; }
     h2 { font-size: 135%; }
+    h4.my-info { font-size: 90%; }
+    h4.employment-desc-header { font-size: 70%; }
 
     .main-nav {
         margin-top: 30px;
@@ -86,8 +88,16 @@
         top: -180px;
     }
 
+    .anchor.overview,
+    .anchor.tools,
+    .anchor.work-history {
+        top: -180px;
+    }
+    
     h1 { font-size: 135%; }
     h2 { font-size: 120%; }
+    h4.my-info { font-size: 75%; }
+    h4.employment-desc-header { font-size: 60%; }
     
     .btn:link,
     .btn:visited {
@@ -149,6 +159,7 @@
 
     h1 { font-size: 120%; }
     h2 { font-size: 100%; }
+    h4.my-info { font-size: 65%; }
     
     .btn:link,
     .btn:visited {

@@ -48,13 +48,14 @@ section {
     visibility: hidden;
 }
 
-.anchor.overview {
+.anchor.overview,
+.anchor.work-history,
+.tools {
     top: -60px;
 }
 
 /* ------------- HEADINGS ------------ */
 
-h1,
 h2,
 h3,
 h4 {
@@ -85,6 +86,12 @@ h4 {
     margin: 20px 20px;
     font-weight: 200;
     text-align: center;
+}
+
+h4.my-info {
+    color: #fff;
+    text-align: left;
+    text-transform: none;
 }
 
 h3 {
@@ -350,6 +357,26 @@ header {
     padding-bottom: 5px;
 }
 
+.employment-desc-list ul li {
+    color: #000;
+    font-size: 85%;
+    margin-left: 15%;
+    margin-right: 10%;
+    padding-bottom: 7px;
+}
+
+.employment-desc-list2 ul li {
+    color: #000;
+    font-size: 95%;
+    margin-left: 5%;
+    margin-right: 10%;
+    padding-top: 7px;
+    padding-bottom: 0;
+}
+
+h4.employment-desc-header {
+    font-size: 80%;
+}
 .employment-info i {
     color: #0f8340;
     display: inline-block;
