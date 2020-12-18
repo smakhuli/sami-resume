@@ -8,9 +8,7 @@ document.querySelector(".details3").addEventListener("click", event => toggleSec
 document.querySelector(".details4").addEventListener("click", event => toggleSection(event, "job4"));
 document.querySelector(".details5").addEventListener("click", event => toggleSection(event, "job5"));
 document.querySelector(".details6").addEventListener("click", event => toggleSection(event, "job6"));
-//document.querySelector(".details7").addEventListener("click", event => toggleSection(event, "job7"));
-//document.querySelector(".details8").addEventListener("click", event => toggleSection(event, "job8"));
-//document.querySelector(".details9").addEventListener("click", event => toggleSection(event, "job9"));
+document.querySelector(".details7").addEventListener("click", event => toggleSection(event, "job7"));
 
 const toggleSection = (event, thisID) => {
     
@@ -49,10 +47,8 @@ const toggleAllSections = (event) => {
 
 const sectionsShowOrHide = (action, valuesArray) => {
     
-//    const jobIDs = ["job1", "job2", "job3", "job4", "job5", "job6", "job7", "job8", "job9"];
-    const jobIDs = ["job1", "job2", "job3", "job4", "job5", "job6"];
-//    const eventClassArray = [".details1", ".details2", ".details3", ".details4", ".details5", ".details6", ".details7", ".details8", ".details9"];
-    const eventClassArray = [".details1", ".details2", ".details3", ".details4", ".details5", ".details6"];
+    const jobIDs = ["job1", "job2", "job3", "job4", "job5", "job6", "job7"];
+    const eventClassArray = [".details1", ".details2", ".details3", ".details4", ".details5", ".details6", ".details7"];
 
     const displayStyle = valuesArray[0];
     const buttonText = valuesArray[1];
